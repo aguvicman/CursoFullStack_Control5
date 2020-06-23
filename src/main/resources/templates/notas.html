@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Control 5 - Notas</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="/js/Notas.js"></script>
+
+
+</head>
+<body>
+			<div class="btn-group">
+               	<button type="button" class="btn btn-primary btn-sm" onclick="javascript:NotasController('list')">Listar</button>
+               	<button type="button" class="btn btn-primary btn-sm" onclick="javascript:NotasController('get')">Buscar</button>
+           		<button type="button" class="btn btn-primary btn-sm" onclick="javascript:NotasController('insert')">Nuevo</button>
+           		<button type="button" class="btn btn-primary btn-sm" onclick="javascript:NotasController('update')">Grabar</button>
+           		<button type="button" class="btn btn-primary btn-sm" onclick="javascript:NotasController('delete')">Eliminar</button>
+            </div>
+   			<p>
+   			<div class="alert alert-danger" id="msg" hidden="true"></div>
+      			<div class="input-group">
+  					<span class="input-group-addon">RUT Alumno</span>
+  					<input id="alumno_rut" type="text" class="form-control" name="alumno_rut">
+				</div>
+				<p>
+				<div class="input-group">
+  					<span class="input-group-addon">Nombre Alumno</span>
+  					<input id="alumno_nombre" type="text" class="form-control" name="alumno_nombre">
+				</div>
+ 				<div class="input-group">
+	   				<span class="input-group-addon">Curso</span>
+	   				<input id="curso_nom" type="text" class="form-control" name="curso_nom">
+ 				</div>
+ 				<div id="notas"></div>
+ 				
+</body>
+</html>
